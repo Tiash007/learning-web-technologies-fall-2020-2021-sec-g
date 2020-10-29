@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Name Inputs</title>
+<title>email Inputs</title>
 </head>
 <body>
 <form method="post" >

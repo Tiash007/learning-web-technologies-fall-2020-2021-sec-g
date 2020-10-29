@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
 <!DOCTYPE html>
 <html>
 <head>
-<title>Name Inputs</title>
+<title>EMAIL Inputs</title>
 </head>
 <body>
 <form method="post" >
