@@ -27,26 +27,9 @@
       
             else
             {
-                echo "Your name is {$_POST["name"]} <br>";
-                echo "Your email address is {$_POST["password"]} <br>";
-                echo "Your gender is {$_POST["id"]} <br>";
-               
-               
-
-                
-                if( isset($_POST["user"]) && !isset($_POST["admin"]) )
-                {
-                    echo "You have completed SSC";
-                }
-                else if( !isset($_POST["user"]) && isset($_POST["admin"]))
-                {
-                    echo "You have completed HSC";
-                }
-               
-                else if( isset($_POST["user"]) && isset($_POST["admin"]) )
-                {
-                    echo "You have completed SSC and HSC";
-                }
+                $myfile = fopen('users.txt', 'a');
+                fwrite($myfile, $_POST["id"] ."|".$_POST["name"] );
+                fclose($myfile);
                 
                 
                 
