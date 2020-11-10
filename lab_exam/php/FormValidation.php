@@ -10,25 +10,22 @@
         }
         else if(empty($_POST["id"]))
         {
-            echo "Email field is empty! Please enter your email!";
+            echo "ID field is empty! Please enter your ID!";
         }
-       // else if(!isValidGender())
-        //{
-           // echo "Gender is not selected";
-        //}
+       
         else if(empty($_POST["password"]))
         {
-            echo "Day field of DOB is empty! Please enter your DOB properly!";
+            echo " field  password is empty! Please enter your password properly!";
         }
         else if(empty($_POST["confirmpassword"]))
         {
-            echo "Month field of DOB is empty! Please enter your DOB properly!";
+            echo "Confirm your password";
         }
       
             else
             {
                 $myfile = fopen('users.txt', 'a');
-                fwrite($myfile, $_POST["id"] ."|".$_POST["name"] );
+                fwrite($myfile, $_POST["id"] ."|".$_POST["name"]."|".$_POST["password"] );
                 fclose($myfile);
                 
                 
