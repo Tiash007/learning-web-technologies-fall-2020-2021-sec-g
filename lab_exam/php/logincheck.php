@@ -2,13 +2,13 @@
 if (isset($_POST['submit'])) {
 	# code...
 
-$myfile = fopen('users.txt', 'r');
-	$data = fread($myfile, filesize('users.txt'));
+
+	$myfile = fopen('users.txt', 'r');
+	$data = fread($myfile, filesize('test.txt'));
 	$data = fgets($myfile);
-	$pieces = explode("|", $data);
-	foreach ($pieces as $piece) {
-		echo ($piece);
+	echo $data;
+
 	}
 
-}
+
 ?>
