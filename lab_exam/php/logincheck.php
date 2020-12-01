@@ -9,7 +9,8 @@ if (isset($_POST['submit'])) {
 	echo $data;
 $words = explode("|", $data);
 foreach ($words as $word) {
-	echo  $word;
+	echo  $word[0];
+	
 }
 	}
 
